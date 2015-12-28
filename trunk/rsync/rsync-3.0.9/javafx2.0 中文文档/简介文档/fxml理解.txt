@@ -1,0 +1,104 @@
+使用的“FX”命名空间前缀。这是一个保留的前缀定义FXML源文件的内部处理使用的元素和属性的数量。
+它一般是一个FXML文件的根元素声明。
+http://download.oracle.com/javafx/2.0/api/javafx/fxml/doc-files/introduction_to_fxml.html#overview
+
+属性：
+	fx:id	
+	fx:factory	
+	fx:value
+		例如：<FXCollections fx:id="lis" fx:factory="observableArrayList">
+			    <String fx:value="A"/>
+			    <String fx:value="B"/>
+			    <String fx:value="C"/>
+			</FXCollections>
+	<fx:reference source="">
+		元素的属性指定新元素将引用的对象的名称;
+		source指定重新加载的值或者是先前的元素名重新加载；
+		元素创建一个新的参考现有元素。无论在什么情况下，这个标签出现时，它会有效地命名的元素的值所取代。
+		它是用来结合的FX：ID属性或脚本变量.
+	<fx:copy>元素创建一个现有元素的副本 。<fx:reference>一样，它是用来与FX:id属性或脚本变量。
+		元素的“source”属性指定将复制的对象的名称。源类型必须定义一个拷贝构造函数，
+		将用于构建从源头值的副本。
+
+目前，没有JavaFX平台的类提供了这样一个拷贝构造函数，所以这个元素主要用于提供应用程序开发人员使用。这可能会改变在未来的版本。
+标签：
+	<fx:include source="my_button.fxml"/>
+	1、标签创建了一个从FXML标记在另一个文件中定义的对象 
+	2、还支持指定的资源束的名称应使用本地化包含的内容，以及使用的字符集编码的源文件的属性。
+
+
+资源引用：
+	1、引用变量：$
+		<fx:define>
+    			<ToggleGroup fx:id="myToggleGroup"/>
+		</ FX：define>
+	
+		<RadioButton text="A" toggleGroup="$myToggleGroup"/>
+		<RadioButton text="B" toggleGroup="$myToggleGroup"/>
+		<RadioButton text="C" toggleGroup="$myToggleGroup"/>
+	2、引用属性文件的值：%
+	3、引用资源文件：@my_image.png
+	4、表达式取值：
+		<TextField fx:id="textField"/>
+		<Label text="${textField.text}"/>
+
+脚本事件处理程序：
+	<?language javascript?>
+
+	<VBox>
+	    <children>
+        	<Button text="Click Me!" 
+	            onAction="java.lang.System.out.println('You clicked me!');"/>
+	    </children>
+	</VBox>
+
+控制器方法的事件处理程序：
+
+	标签绑定：
+	<VBox fx:controller="com.foo.MyController"
+    		xmlns:fx="http://javafx.com/fxml">
+    		<children>
+       			<Button text="Click Me!" onAction="#handleButtonAction"/>
+    		</children>
+	</VBox>
+	控制器类：
+	package com.foo;
+
+	public class MyController {
+    		public void handleButtonAction(ActionEvent event) {
+        		System.out.println("You clicked me!");
+    		}
+	}
+			
+
+直接写脚本：
+	<?language javascript?>
+
+	<?import javafx.scene.control.*?>
+	<?import javafx.scene.layout.*?>
+
+	<VBox xmlns:fx="http://javafx.com/fxml">
+    		<fx:script>
+    		importClass(java.lang.System);
+
+    		function handleButtonAction(event) {
+       			System.out.println('You clicked me!');
+    		}
+    		</fx:script>
+
+    		<children>
+        	<Button text="Click Me!" onAction="handleButtonAction(event);"/>
+    	</children>
+	</VBox>
+导入脚本：
+	<?import javafx.scene.control.*?>
+	<?import javafx.scene.layout.*?>
+
+	<VBox xmlns:fx="http://javafx.com/fxml">
+    		<fx:script source="example.js"/>
+
+    		<children>
+        		<Button text="Click Me!" onAction="handleButtonAction(event);"/>
+    		</children>
+	</VBox>
+

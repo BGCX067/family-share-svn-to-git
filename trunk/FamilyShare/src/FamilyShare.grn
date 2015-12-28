@@ -1,0 +1,219 @@
+<uml>
+   <greenVersion="30100"/>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{TalkServer.java[TalkServer"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{TalkClient.java[TalkClient"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{NIOTest.java[NIOTest"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{GetFile.java[GetFile"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="600"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTest"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="200"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="200"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ExtensionFileFilter"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="200"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame[OpenAction"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="914"/>
+      <y="290"/>
+   </type>
+   <type>
+      <name="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.util(Scanner.class[Scanner"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="600"/>
+      <y="200"/>
+   </type>
+   <type>
+      <name="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(PrintWriter.class[PrintWriter"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<javax.swing(JFileChooser.class[JFileChooser"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="600"/>
+      <y="400"/>
+   </type>
+   <type>
+      <name="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(BufferedReader.class[BufferedReader"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="600"/>
+   </type>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(BufferedReader.class[BufferedReader"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <targetType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+         <bendpoint>
+            <x="40"/>
+            <y="0"/>
+         </bendpoint>
+         <bendpoint>
+            <x="40"/>
+            <y="-40"/>
+         </bendpoint>
+         <bendpoint>
+            <x="0"/>
+            <y="-40"/>
+         </bendpoint>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<javax.swing(JFileChooser.class[JFileChooser"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(PrintWriter.class[PrintWriter"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <targetType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyIPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame"/>
+      <targetType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame[OpenAction"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame[OpenAction"/>
+      <targetType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ExtensionFileFilter"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(BufferedReader.class[BufferedReader"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(BufferedReader.class[BufferedReader"/>
+      <targetType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{GetFile.java[GetFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(PrintWriter.class[PrintWriter"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<javax.swing(JFileChooser.class[JFileChooser"/>
+      <targetType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{GetFile.java[GetFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.io(BufferedReader.class[BufferedReader"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.util(Scanner.class[Scanner"/>
+      <targetType="=3w/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.lang(String.class[String"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{SendFile.java[SendFile"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<java.util(Scanner.class[Scanner"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+   <relationship>
+      <class="edu.buffalo.cse.green.relationship.dependency.DependencyLPart"/>
+      <sourceType="=FamilyShare/src<com.familyshare.pre{ZipTest.java[ZipTestFrame[OpenAction"/>
+      <targetType="=FamilyShare/D:\/Program Files\/Java\/jdk1.7.0_21\/jre\/lib\/rt.jar<javax.swing(JFileChooser.class[JFileChooser"/>
+      <bendpoints>
+      </bendpoints>
+   </relationship>
+</uml>
+
